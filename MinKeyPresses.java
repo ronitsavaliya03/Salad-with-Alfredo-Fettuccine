@@ -28,7 +28,7 @@ public class MinKeyPresses  {
     public static void main(String[] args) {
         MinKeyPresses  solution = new MinKeyPresses ();
 
-        System.out.println(solution.minimumKeypresses("abcdefghijkl")); // Output: 5
+        System.out.println(solution.minimumKeypresses("abcde")); // Output: 5
 
         System.out.println(solution.minimumKeypresses("xyzxyzxyzxyz")); // Output: 12
 
