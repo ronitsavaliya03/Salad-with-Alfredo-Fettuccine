@@ -52,7 +52,7 @@ public class ReverseWordsInString {
     public static void main(String[] args) {
         ReverseWordsInString test=new ReverseWordsInString();
 
-        String ans=test.reverseWords("  the sky is pink  ");
+        String ans=test.reverseWords("  the    sky is pink  ");
         System.out.println(ans);    
     }
 }
