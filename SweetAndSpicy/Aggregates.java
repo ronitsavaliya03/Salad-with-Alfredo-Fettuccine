@@ -9,20 +9,23 @@ public class Aggregates {
         System.out.print("Enter the n: ");
         int n=sc.nextInt();
 
-        int[] array=new int[n];
-        for(int i=0; i<n; i++){
-            System.out.print("Enter the element: ");      
-            array[i]=sc.nextInt();
+        if (n <= 0) {
+            System.out.println("The number of values must be greater than 0.");
+            sc.close();
+            return;
         }
 
         int min=Integer.MAX_VALUE;
         int max=Integer.MIN_VALUE;
         int sum=0;
-        for(int i: array){
-            if(i>max) max=i;
-            if(i<min) min=i;
+        for(int i=1; i<=n; i++){
+            System.out.print("Enter the element: "); 
+            int value=sc.nextInt();  
 
-            sum+=i;
+            if(value>max) max=value;
+            if(value<min) min=value;
+
+            sum+=value;   
         }
 
         System.out.println("Min value: "+min);
